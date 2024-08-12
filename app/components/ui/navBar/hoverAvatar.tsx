@@ -9,6 +9,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card";
+import { signOut } from "next-auth/react";
 
 const HoverAvatar = () => {
   return (
@@ -33,6 +34,7 @@ const HoverAvatar = () => {
               <span className="text-xs text-muted-foreground">
                 Joined August 2024
               </span>
+              <button onClick={() => signOut(undefined)}>logOut</button>
             </div>
           </div>
         </div>
