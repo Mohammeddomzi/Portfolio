@@ -1,11 +1,7 @@
 "use client";
 import { VscAccount } from "react-icons/vsc";
-import { IoChatbubblesOutline } from "react-icons/io5";
-import { LuHome } from "react-icons/lu";
-import { TbHexagon3D } from "react-icons/tb";
-import { RiContactsLine } from "react-icons/ri";
+import { Box, UserSearch, MessageCircleMore, House } from "lucide-react";
 import Link from "next/link";
-import HoverAvatar from "./hoverAvatar";
 import { signIn } from "next-auth/react";
 
 const Login = () => {
@@ -15,18 +11,20 @@ const Login = () => {
                   bg-gradient-to-t from-gray-900 to-gray-800 bg-opacity-90 shadow-lg backdrop-blur-lg"
     >
       <SideBarIcon
-        icon={<RiContactsLine size="22" />}
+        icon={<UserSearch size="26" />}
         Text="Contact"
         href="/Contact"
       />
       <SideBarIcon
-        icon={<IoChatbubblesOutline size="32" />}
+        icon={<MessageCircleMore size="26" />}
         Text="Chat"
         href="/chatting"
       />
-      <SideBarIcon icon={<LuHome size="20" />} Text="Home" href="/" />
-      <SideBarIcon icon={<TbHexagon3D size="20" />} Text="3D" href="/3D" />
-      <button onClick={() => signIn("google")}>login</button>
+      <SideBarIcon icon={<House size="26" />} Text="Home" href="/" />
+      <SideBarIcon icon={<Box size="26" />} Text="3D" href="/3D" />
+      <button onClick={() => signIn("google")}>
+        <SideBarIcon icon={<VscAccount size="26" />} href="/" />
+      </button>
     </div>
   );
 };

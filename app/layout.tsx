@@ -5,11 +5,15 @@ import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import SideBar from "./components/ui/navBar/sideBar";
 
 import SessionProvider from "./SessionProvider";
-import Login from "./components/ui/navBar/login";
+import Login from "./components/ui/navBar/Login";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
+export const metadata: Metadata = {
+  title: "Domzi",
+  description: "Mohammed Alammar Portfolio",
+};
 
 
 export default async function RootLayout({

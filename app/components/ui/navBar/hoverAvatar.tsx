@@ -1,4 +1,4 @@
-import { CalendarDays } from "lucide-react";
+import { LogOut } from "lucide-react";
 import {
   Avatar,
   AvatarFallback,
@@ -9,32 +9,32 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 const HoverAvatar = () => {
+  const session = useSession();
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
         <Avatar>
-          <AvatarImage src="https://avatars.githubusercontent.com/u/86594449?v=4" />
-          <AvatarFallback>DZ</AvatarFallback>
+          <AvatarImage src={session?.data?.user?.image ?? ""} />
+          <AvatarFallback>?</AvatarFallback>
         </Avatar>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
           <Avatar>
-            <AvatarImage src="https://avatars.githubusercontent.com/u/86594449?v=4" />
+            <AvatarImage src={session?.data?.user?.image ?? ""} />
             <AvatarFallback>DZ</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
-            <h4 className="text-sm font-semibold">@domzi</h4>
-            <p className="text-sm">Software engineering student at KFUPM.</p>
+            <h4 className="text-sm font-semibold">@{session?.data?.user?.name}</h4>
+            <p className="text-sm">{session?.data?.user?.email}.</p>
             <div className="flex items-center pt-2">
-              <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-              <span className="text-xs text-muted-foreground">
-                Joined August 2024
+              <LogOut className="mr-2 h-4 w-4 opacity-70 font-bold" />{" "}
+              <span className="text-xs text-muted-foreground text-red-600 font-bold">
+                <button onClick={() => signOut()}>logOut</button>
               </span>
-              <button onClick={() => signOut(undefined)}>logOut</button>
             </div>
           </div>
         </div>
