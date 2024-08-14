@@ -87,7 +87,7 @@ function ChatMessage(props: any) {
 
   return (
     <div className="flex items-start space-x-2 mb-4">
-      <Image
+      <img
         src={
           photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
         }
