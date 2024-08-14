@@ -1,3 +1,4 @@
+"use client";
 import { LogOut } from "lucide-react";
 import {
   Avatar,
@@ -25,7 +26,7 @@ const HoverAvatar = () => {
         <div className="flex justify-between space-x-4">
           <Avatar>
             <AvatarImage src={session?.data?.user?.image ?? ""} />
-            <AvatarFallback>DZ</AvatarFallback>
+            <AvatarFallback>?</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">@{session?.data?.user?.name}</h4>
