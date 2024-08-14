@@ -23,14 +23,14 @@ const HoverAvatar = () => {
         </Avatar>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
-        <div className="flex justify-between space-x-4">
+        <div className="flex justify-stretch space-x-4">
           <Avatar>
             <AvatarImage src={session?.data?.user?.image ?? ""} />
             <AvatarFallback>?</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">@{session?.data?.user?.name}</h4>
-            <p className="text-sm">{session?.data?.user?.email}.</p>
+            <p className="text-sm">{session?.data?.user?.email}</p>
             <div className="flex items-center pt-2">
               <LogOut className="mr-2 h-4 w-4 opacity-70 font-bold" />{" "}
               <span className="text-xs text-muted-foreground text-red-600 font-bold">

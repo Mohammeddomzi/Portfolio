@@ -17,7 +17,7 @@ const SideBar = () => {
         href="/chatting"
       />
       <SideBarIcon icon={<House size="26" />} Text="Home" href="/" />
-      <SideBarIcon icon={<Box size="26" />} Text="Projects" href="/Projects" />
+      <SideBarIcon icon={<Box size="26" />} Text="Random" href="/Random" />
       <HoverAvatar />
     </div>
   );

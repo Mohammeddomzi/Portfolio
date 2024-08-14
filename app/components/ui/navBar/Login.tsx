@@ -18,7 +18,7 @@ const Login = () => {
         href="/chatting"
       />
       <SideBarIcon icon={<House size="26" />} Text="Home" href="/" />
-      <SideBarIcon icon={<Box size="26" />} Text="Projects" href="/Projects" />
+      <SideBarIcon icon={<Box size="26" />} Text="Random" href="/Random" />
       <button onClick={() => signIn("google")}>
         <SideBarIcon icon={<VscAccount size="26" />} href="/" />
       </button>
