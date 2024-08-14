@@ -76,7 +76,7 @@ const MovieCarousel = () => {
       .get(apiUrl, {
         headers: {
           accept: "application/json",
-          Authorization: `Bearer ${process.env.MOVIE_API_KEY}`,
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYTA3OWMyNzJlYWUzZjE1ZGM4ZTNhYWZkNzQ3Y2MyMSIsIm5iZiI6MTcyMzY0NjA4NC43NDM2NjMsInN1YiI6IjY2YmM4ZTg0MDIyYjYwMTFlOThjN2YzZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZDHkD4kvQTWg6qmntAlbs7ScELqGs_sb3GTq-X-aqL0',
         },
       })
       .then((response) => {
