@@ -61,7 +61,7 @@ function ChatRoom() {
 
       <form
         onSubmit={sendMessage}
-        className="fixed bottom-16 left-0 w-full bg-gradient-to-t from-gray-800 to-gray-900 p-4 flex items-center border-t border-gray-700"
+        className="fixed bottom-16 left-0 w-full bg-gradient-to-b from-gray-900 p-4 flex items-center border-t border-gray-700"
       >
         <input
           value={formValue}
