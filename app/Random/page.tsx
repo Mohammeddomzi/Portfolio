@@ -32,6 +32,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../components/ui/carousel";
+import Image from "next/image";
 
 const FormSchema = z.object({
   category: z.string({
@@ -149,7 +150,7 @@ const MovieCarousel = () => {
             >
               <div className="p-2">
                 <Card className="h-[28rem] w-full flex flex-col items-center justify-between bg-gray-800 text-cyan-50 border border-gray-700 rounded">
-                  <img
+                  <Image
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                     alt={movie.title}
                     className="w-full h-[70%] object-cover rounded-t-md"

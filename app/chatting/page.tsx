@@ -11,6 +11,7 @@ import {
 } from "firebase/firestore";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useSession, signIn } from "next-auth/react";
+import Image from "next/image";
 
 function ChatRoom() {
   const { data: session } = useSession();
@@ -86,7 +87,7 @@ function ChatMessage(props: any) {
 
   return (
     <div className="flex items-start space-x-2 mb-4">
-      <img
+      <Image
         src={
           photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
         }

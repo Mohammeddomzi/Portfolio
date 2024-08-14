@@ -15,9 +15,9 @@ export default function Home() {
               and I am a software engineer.
             </h1>
             <p className="mt-4 text-2xl text-cyan-100">
-              I'm a 22-year-old software engineering student at KFUPM,
+              I&apos;m a 22-year-old software engineering student at KFUPM,
               passionate about coding and technology. Born and raised in Saudi
-              Arabia, I'm eager to apply my skills and contribute to the tech
+              Arabia, I&apos;m eager to apply my skills and contribute to the tech
               industry.
             </p>
           </div>
