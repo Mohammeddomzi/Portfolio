@@ -76,7 +76,8 @@ const MovieCarousel = () => {
       .get(apiUrl, {
         headers: {
           accept: "application/json",
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYTA3OWMyNzJlYWUzZjE1ZGM4ZTNhYWZkNzQ3Y2MyMSIsIm5iZiI6MTcyMzY0NjA4NC43NDM2NjMsInN1YiI6IjY2YmM4ZTg0MDIyYjYwMTFlOThjN2YzZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZDHkD4kvQTWg6qmntAlbs7ScELqGs_sb3GTq-X-aqL0',
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYTA3OWMyNzJlYWUzZjE1ZGM4ZTNhYWZkNzQ3Y2MyMSIsIm5iZiI6MTcyMzY0NjA4NC43NDM2NjMsInN1YiI6IjY2YmM4ZTg0MDIyYjYwMTFlOThjN2YzZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZDHkD4kvQTWg6qmntAlbs7ScELqGs_sb3GTq-X-aqL0",
         },
       })
       .then((response) => {
@@ -98,7 +99,7 @@ const MovieCarousel = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-t from-gray-800 via-gray-900 to-black text-cyan-50 flex flex-col items-center p-8">
+    <div className="min-h-screen bg-gradient-to-t from-gray-950 via-black to-black  text-cyan-50 flex flex-col items-center p-8">
       <h1 className="text-4xl font-extrabold mb-8 text-center">Movies</h1>
       <Form {...form}>
         <form

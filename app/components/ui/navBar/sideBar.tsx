@@ -8,7 +8,7 @@ const SideBar = () => {
   return (
     <div
       className="fixed bottom-0 h-16 w-screen flex flex-row justify-around items-center
-                  bg-gradient-to-t from-gray-900 "
+                  bg-gradient-to-t from-gray-950 "
     >
       <ContactDrawer />
       <SideBarIcon

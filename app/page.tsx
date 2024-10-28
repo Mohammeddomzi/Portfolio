@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-t from-gray-800 via-gray-900 to-black flex flex-col justify-center items-center p-8">
+    <div className="min-h-screen bg-gradient-to-t from-gray-950 via-black to-black flex flex-col justify-center items-center p-8">
       <div className="flex flex-col justify-center items-center gap-10 flex-grow text-center lg:text-left">
         <div className="flex flex-col justify-center items-center min-h-64">
           <div className="max-w-4xl mx-auto text-center">
@@ -14,7 +14,7 @@ export default function Home() {
               </span>{" "}
               and I am a software engineer.
             </h1>
-            <p className="mt-4 text-2xl text-cyan-100">
+            <p className="mt-4 text-2xl text-cyan-50">
               I&apos;m a 22-year-old software engineering student at KFUPM,
               passionate about coding and technology. Born and raised in Saudi
               Arabia, I&apos;m eager to apply my skills and contribute to the tech

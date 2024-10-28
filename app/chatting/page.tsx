@@ -24,7 +24,7 @@ function ChatRoom() {
 
   if (!session) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-t from-gray-800 via-gray-900 to-black">
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-t from-gray-950 via-black to-black">
         <button
           onClick={() => signIn("google")}
           className="px-8 py-4 bg-cyan-500 text-white rounded-lg shadow-lg hover:bg-cyan-600"
@@ -53,7 +53,7 @@ function ChatRoom() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-t from-gray-800 via-gray-900 to-black text-cyan-50">
+    <div className="flex flex-col min-h-screen bg-gradient-to-t from-gray-950 via-black to-black  text-cyan-50">
       <main className="flex-grow p-8 overflow-auto pb-20">
         {messages &&
           messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}

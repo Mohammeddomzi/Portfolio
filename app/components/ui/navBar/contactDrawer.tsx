@@ -21,8 +21,8 @@ const ContactDrawer = () => {
         <div className="sidebar-icon group relative flex flex-col items-center">
           <UserSearch
             size="26"
-            className="h-12 w-12 pt-2 pb-2 mx-auto hover:bg-blue-600 
-                      text-blue-500 hover:text-white
+            className="h-12 w-12 pt-2 pb-2 mx-auto hover:bg-gray-900 
+                     text-cyan-50 hover:text-white
                       hover:rounded-xl rounded-3xl
                       transition-all duration-300 ease-linear
                       cursor-pointer shadow-lg"
@@ -46,7 +46,10 @@ const ContactDrawer = () => {
             rel="noopener noreferrer"
             className="w-full"
           >
-            <Button variant="outline" className="flex items-center gap-2 w-full">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 w-full"
+            >
               <FaGithub size={20} />
               GitHub
             </Button>
@@ -57,7 +60,10 @@ const ContactDrawer = () => {
             rel="noopener noreferrer"
             className="w-full"
           >
-            <Button variant="outline" className="flex items-center gap-2 w-full">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 w-full"
+            >
               <FaLinkedin size={20} />
               LinkedIn
             </Button>
@@ -68,7 +74,10 @@ const ContactDrawer = () => {
             rel="noopener noreferrer"
             className="w-full"
           >
-            <Button variant="outline" className="flex items-center gap-2 w-full">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 w-full"
+            >
               <FaTwitter size={20} />
               Twitter
             </Button>
@@ -79,7 +88,10 @@ const ContactDrawer = () => {
             rel="noopener noreferrer"
             className="w-full"
           >
-            <Button variant="outline" className="flex items-center gap-2 w-full">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 w-full"
+            >
               <FaEnvelope size={20} />
               Email
             </Button>
@@ -90,7 +102,10 @@ const ContactDrawer = () => {
             rel="noopener noreferrer"
             className="w-full"
           >
-            <Button variant="outline" className="flex items-center gap-2 w-full">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 w-full"
+            >
               <IoDocumentText size={20} />
               Resume
             </Button>
