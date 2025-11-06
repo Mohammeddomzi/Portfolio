@@ -23,7 +23,7 @@ const SideBar = () => {
       <SideBarIcon
         icon={<CalendarDays size="26" />}
         Text="Timeline"
-        href="/Random"
+        href="/Timeline"
       />
     </div>
   );
