@@ -11,7 +11,7 @@ import {
   DrawerTrigger,
 } from "./../drawer";
 import { Button } from "../button";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 
 const ContactDrawer = () => {
@@ -66,20 +66,6 @@ const ContactDrawer = () => {
             >
               <FaLinkedin size={20} />
               LinkedIn
-            </Button>
-          </a>
-          <a
-            href="https://x.com/iamdomzi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full"
-          >
-            <Button
-              variant="outline"
-              className="flex items-center gap-2 w-full"
-            >
-              <FaTwitter size={20} />
-              Twitter
             </Button>
           </a>
           <a

@@ -1,7 +1,8 @@
 "use client";
-import { Box, UserSearch, MessageCircleMore, House } from "lucide-react";
+import { CalendarDays, House } from "lucide-react";
+// Hidden imports - preserved for later use:
+// import { MessageCircleMore } from "lucide-react";
 import Link from "next/link";
-import HoverAvatar from "./hoverAvatar";
 import ContactDrawer from "./contactDrawer";
 
 const SideBar = () => {
@@ -11,14 +12,19 @@ const SideBar = () => {
                   bg-gradient-to-t from-gray-950 "
     >
       <ContactDrawer />
-      <SideBarIcon
+      {/* Commented out - Chat page hidden but code preserved in app/_chatting folder */}
+      {/* To restore: rename app/_chatting to app/chatting and uncomment below */}
+      {/* <SideBarIcon
         icon={<MessageCircleMore size="26" />}
         Text="Chat"
         href="/chatting"
-      />
+      /> */}
       <SideBarIcon icon={<House size="26" />} Text="Home" href="/" />
-      <SideBarIcon icon={<Box size="26" />} Text="Random" href="/Random" />
-      <HoverAvatar />
+      <SideBarIcon
+        icon={<CalendarDays size="26" />}
+        Text="Timeline"
+        href="/Random"
+      />
     </div>
   );
 };
